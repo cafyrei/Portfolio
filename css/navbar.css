@@ -13,13 +13,14 @@ body {
   align-items: center;
   font-family: "Poppins";
   font-weight: bold;
-  background-color: rgb(42, 42, 42);
+  background-color: #171717;
   border-radius: 40px;
   margin: 15px auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .nav-right ul {
+  font-size: 18px;
   list-style: none;
   display: flex;
   gap: 20px;
