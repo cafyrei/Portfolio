@@ -1,0 +1,154 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cinzel+Decorative:wght@400;700;900&family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Uncial+Antiqua&display=swap");
+
+@font-face {
+  font-family: "NeueMachina";
+  src: url("../fonts/NeueMachina.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("../fonts/LeagueSpartan.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+/* Base Style */
+body {
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Layout */
+.main {
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-content {
+  width: 50%; 
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+.main-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem 9vw 4rem;
+}
+
+/* Main Text */
+#name-text {
+  font-family: "NeueMachina";
+  font-size: 6.5rem; 
+  color: #8b61c2;
+}
+
+.developer-text {
+  font-family: "LeagueSpartan";
+  text-transform: uppercase;
+  font-size: 3.25rem; 
+  color: #fff;
+}
+
+.quote {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 1.84rem; 
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+
+.download-cv button {
+  padding: 1rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #8b61c2;
+  font-weight: 600;
+  font-family: "Fredoka";
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.download-cv img {
+  width: 1rem;
+  height: 1rem;
+  filter: invert(100%);
+}
+
+/* Socials */
+
+.socials {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 8rem; 
+}
+
+.socials ul {
+  list-style: none;
+  display: flex;
+  gap: 0.3rem;
+}
+
+svg image {
+  filter: invert(100%);
+}
+
+svg circle {
+  fill: #8b61c2;
+}
+
+/* Image Side */
+.main-img {
+  /* background-color: #3f3f3f; */
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-bg {
+  margin-left: 4rem;
+  position: absolute;
+  top: 7rem;
+  left: 4.3rem;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-image: radial-gradient(white 1px, transparent 2px);
+  background-size: 35px 35px;
+  z-index: -2;
+}
+
+.main-photo {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  width: 660px;
+  height: 660px;
+  border-radius: 50%;
+}

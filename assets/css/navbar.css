@@ -7,7 +7,7 @@ body {
 
 .navbar {
   width: 80%;
-  height: 75px;
+  height: 4.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,8 +15,8 @@ body {
   font-weight: bold;
   background-color: #171717;
   border-radius: 40px;
-  margin: 15px auto;
-  padding: 0 3rem;
+  margin: 1.7rem auto;
+  padding: 0 4rem;
 }
 
 .nav-right ul {
