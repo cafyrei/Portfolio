@@ -1,7 +1,7 @@
 const texts = ["Rafhielle", "Allen"];
 const typingSpeed = 150;
-const erasingSpeed = 100;
-const delayBetween = 1500;
+const erasingSpeed = 30;
+const delayBetween = 2000;
 
 let textIndex = 0;
 let charIndex = 0;
@@ -19,7 +19,6 @@ function type() {
     }
 }
 
-
 function erase() {
     if (charIndex > 0) {
         typingText.textContent = texts[textIndex].substring(0, charIndex - 1);
@@ -30,7 +29,6 @@ function erase() {
         setTimeout(type, typingSpeed);
     }
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
     type();

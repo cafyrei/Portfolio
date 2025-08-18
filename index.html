@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/wave.css" />
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>Document</title>
@@ -10,12 +11,12 @@
   <body>
     <nav class="navbar">
       <div class="nav-left">
-        <a href="#"><img src="assets/images/nav-logo.png" alt="logo" /></a>
+        <a href="#"><img src="assets/images/4ALC.png" alt="logo" /></a>
       </div>
 
       <div class="nav-right">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#" active>Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Tools</a></li>
@@ -27,8 +28,8 @@
     <main class="main">
       <div class="main-content">
         <div class="main-text">
-          <div id="name-text">
-            <h1>Allen</h1>
+          <div>
+            <h1 id="name-text"></h1>
           </div>
           <div class="developer-text">
             <h2>Developer</h2>
@@ -132,13 +133,26 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="main-img">
         <div class="circle-bg"></div>
-        <img src="/assets/images/Allen.png" alt="Allen Alcabaza Image" class="main-photo">
+        <img
+          src="/assets/images/Allen.png"
+          alt="Allen Alcabaza Image"
+          class="main-photo"
+        />
       </div>
     </main>
 
-    <!-- <script src="javascript/text_type.js"></script> -->
+    <section>
+      <div class="wave">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
+    <script src="./assets/javascript/text_type.js"></script>
   </body>
 </html>

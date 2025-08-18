@@ -40,21 +40,22 @@ body {
 .main-content h3 {
   margin: 0;
   padding: 0;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .main-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 5rem 9vw 4rem;
+  margin: 3rem 9vw 4rem;
 }
 
 /* Main Text */
 #name-text {
   font-family: "NeueMachina";
-  font-size: 6.5rem; 
+  font-size: 10.5rem; 
   color: #8b61c2;
+  min-height: 1.35em; 
 }
 
 .developer-text {
@@ -75,8 +76,11 @@ body {
 /* Button */
 
 .download-cv button {
-  padding: 1rem 2.5rem;
+  /* padding: 1rem 2.5rem; */
+  width: 13em;
+  height: 3em;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.6rem;
   border: none;
@@ -89,6 +93,28 @@ body {
   letter-spacing: 0.03rem;
   text-transform: uppercase;
   color: #fff;
+  box-shadow: 6px 6px 12px #525252,
+             -6px -6px 12px #5f5f5f;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.download-cv button::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 30em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.download-cv button:hover::before {
+ width: 13em;
 }
 
 .download-cv img {
@@ -134,7 +160,7 @@ svg circle {
 .circle-bg {
   margin-left: 4rem;
   position: absolute;
-  top: 7rem;
+  top: 5rem;
   left: 4.3rem;
   width: 550px;
   height: 550px;
@@ -146,7 +172,7 @@ svg circle {
 
 .main-photo {
   position: absolute;
-  top: 25px;
+  top: -10px;
   left: 50px;
   width: 660px;
   height: 660px;

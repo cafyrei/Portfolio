@@ -12,8 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: "Poppins";
-  font-weight: bold;
-  background-color: #171717;
+  font-weight: 400;
   border-radius: 40px;
   margin: 1.7rem auto;
   padding: 0 4rem;
