@@ -53,7 +53,7 @@ body {
 /* Main Text */
 #name-text {
   font-family: "NeueMachina";
-  font-size: 10.5rem; 
+  font-size: clamp(5rem, 8vw, 10.5rem);
   color: #8b61c2;
   min-height: 1.35em; 
 }
@@ -61,14 +61,14 @@ body {
 .developer-text {
   font-family: "LeagueSpartan";
   text-transform: uppercase;
-  font-size: 3.25rem; 
+  font-size: clamp(1.5rem, 3vw, 3.25rem);
   color: #fff;
 }
 
 .quote {
   font-family: "Poppins";
   font-weight: 100;
-  font-size: 1.84rem; 
+  font-size: clamp(1rem, 2vw, 1.84rem);
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -99,6 +99,7 @@ body {
   overflow: hidden;
   z-index: 1;
 }
+
 .download-cv button::before {
  content: '';
  width: 0;
@@ -130,7 +131,7 @@ body {
   height: 3rem;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 8rem; 
+  /* padding-left: 30%;  */
 }
 
 .socials ul {
@@ -149,7 +150,6 @@ svg circle {
 
 /* Image Side */
 .main-img {
-  /* background-color: #3f3f3f; */
   width: 50%;
   position: relative;
   display: flex;
@@ -177,4 +177,40 @@ svg circle {
   width: 660px;
   height: 660px;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 1rem;
+  }
+
+  .main-content, .main-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .circle-bg, .main-photo {
+    width: 80%;
+    height: auto;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .download-cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .main-text {
+    margin: 1rem 9vw 4rem;
+  }
+
+  .main-content {
+    margin-top: 1px ;
+  }
+  
 }

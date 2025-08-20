@@ -38,7 +38,7 @@ body {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 728px) {
   .navbar {
     flex-direction: column;
     height: auto;
@@ -48,6 +48,8 @@ body {
 
   .nav-right ul {
     flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: clamp(1rem, 2vw, 1.84rem);
     justify-content: center;
   }
 }
