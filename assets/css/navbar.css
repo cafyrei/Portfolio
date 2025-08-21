@@ -16,13 +16,15 @@ body {
   border-radius: 40px;
   margin: 1.7rem auto;
   padding: 0 4rem;
+  gap: 2rem;
+  /* background-color: blueviolet; */
 }
 
 .nav-right ul {
   font-size: 18px;
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 18px;
   margin: 0;
   padding: 0;
 }
@@ -32,6 +34,7 @@ body {
   width: 130px;
   height: auto;
 }
+
 
 .navbar a {
   text-decoration: none;
@@ -44,7 +47,7 @@ body {
     height: auto;
     padding: 1rem;
     border-radius: 80px;
-    margin-left: 4px;
+    gap: 4px;
   }
 
   .nav-right ul {
@@ -52,13 +55,12 @@ body {
     margin-top: 10px;
     font-size: clamp(1rem, 2vw, 1.84rem);
     justify-content: center;
-
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -66,5 +68,4 @@ body {
   .navbar {
     font-size: 8px;
   }
-
 }
