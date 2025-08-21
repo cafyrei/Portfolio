@@ -44,6 +44,7 @@ body {
     height: auto;
     padding: 1rem;
     border-radius: 80px;
+    margin-left: 4px;
   }
 
   .nav-right ul {
@@ -51,5 +52,19 @@ body {
     margin-top: 10px;
     font-size: clamp(1rem, 2vw, 1.84rem);
     justify-content: center;
+
   }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar {
+    font-size: 8px;
+  }
+
 }

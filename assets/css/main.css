@@ -16,6 +16,11 @@
   src: url("../fonts/Poppins-Regular.ttf") format("truetype");
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 /* Base Style */
 body {
   background-color: #121212;
@@ -47,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 3rem 9vw 4rem;
+  margin: 3rem 9vw 0rem;
 }
 
 /* Main Text */
@@ -71,12 +76,24 @@ body {
   font-size: clamp(1rem, 2vw, 1.84rem);
   color: #fff;
   margin-bottom: 1rem;
+  flex-direction: column;
 }
 
-/* Button */
+.action {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 2rem 9vw 0rem;
+  gap: 4rem;
+}
 
+.download-cv {
+  margin: 0;
+}
+/* Button */
 .download-cv button {
-  /* padding: 1rem 2.5rem; */
   width: 13em;
   height: 3em;
   display: flex;
@@ -93,11 +110,13 @@ body {
   letter-spacing: 0.03rem;
   text-transform: uppercase;
   color: #fff;
-  box-shadow: 6px 6px 12px #525252,
-             -6px -6px 12px #5f5f5f;
+  box-shadow: 1px 3px 8px rgba(82, 82, 82, 0.5),
+            1px -3px 8px rgba(95, 95, 95, 0.5);
+
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin: 0;
 }
 
 .download-cv button::before {
@@ -131,14 +150,18 @@ body {
   height: 3rem;
   align-items: center;
   justify-content: flex-start;
-  /* padding-left: 30%;  */
+  height: auto;
+  margin-left: 8px;
 }
 
 .socials ul {
-  list-style: none;
-  display: flex;
-  gap: 0.3rem;
+  list-style: none;   
+  margin: 0;          
+  padding: 0;      
+  display: flex;     
+  gap: 0.5rem;      
 }
+
 
 svg image {
   filter: invert(100%);
@@ -202,15 +225,35 @@ svg circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5px;
   }
   
   .main-text {
-    margin: 1rem 9vw 4rem;
+    margin: 0rem 9vw 1rem;
   }
 
   .main-content {
     margin-top: 1px ;
+  }
+
+  .action {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 530px) {
+  #name-text {
+    font-size: clamp(4.5rem, 8vw, 10.5rem);
   }
   
 }
