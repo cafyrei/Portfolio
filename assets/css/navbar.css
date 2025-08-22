@@ -35,7 +35,6 @@ body {
   height: auto;
 }
 
-
 .navbar a {
   text-decoration: none;
   color: white;
@@ -53,19 +52,19 @@ body {
   .nav-right ul {
     flex-wrap: wrap;
     margin-top: 10px;
-    font-size: clamp(1rem, 2vw, 1.84rem);
+    font-size: clamp(.8rem, 2vw, 1.84rem);
     justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    font-size: 12px;
+    font-size: clamp(.5rem, 2vw, 1.84rem);
   }
 }
 
 @media (max-width: 380px) {
   .navbar {
-    font-size: 8px;
+    font-size: clamp(1rem, 2vw, 1.84rem);
   }
 }

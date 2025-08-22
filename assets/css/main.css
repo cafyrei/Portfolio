@@ -278,7 +278,7 @@ svg circle {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 25vh;
+    top: clamp(14vh, 8vh, 24vh);
     height: auto;
     /* background-color: #0fd850; */
   }
@@ -306,7 +306,7 @@ svg circle {
   .main-img {
     position: absolute;
     bottom: 10rem;
-    right: 4rem;
+    right: 3.2rem;
     margin: 0;
     padding: 0;
     z-index: -1;
