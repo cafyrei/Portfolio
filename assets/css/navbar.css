@@ -43,8 +43,9 @@ body {
 @media (max-width: 728px) {
   .navbar {
     flex-direction: column;
+    width: 100%;
     height: auto;
-    padding: 1rem;
+    padding: 1.3rem;
     border-radius: 80px;
     gap: 4px;
   }
@@ -59,12 +60,12 @@ body {
 
 @media (max-width: 480px) {
   .navbar {
-    font-size: clamp(.5rem, 2vw, 1.84rem);
+    font-size: clamp(.6rem, 2vw, 1.2rem);
   }
 }
 
 @media (max-width: 380px) {
   .navbar {
-    font-size: clamp(1rem, 2vw, 1.84rem);
+    font-size: clamp(.4rem, 2vw, 1rem);
   }
 }
