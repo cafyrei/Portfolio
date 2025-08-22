@@ -35,7 +35,6 @@ body {
   height: 80vh;
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 .main-content {
@@ -244,11 +243,32 @@ svg circle {
   }
 
   .main-text {
-    margin: 0rem 9vw 1rem;
+    margin: 0;
+    width: 100%;
+    z-index: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
   }
 
   .main-content {
-    margin-top: 1px;
+    margin-top: 21vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+  }
+
+  .main-img {
+    z-index: -1;
+    position: relative;
+    text-align: center;
+  }
+
+  .main-img img {
+    position: absolute;
+    max-width: 460px;
+    max-height: 460px;
+    right: 18vw;
+    bottom: 15vh;
   }
 
   .action {
@@ -278,11 +298,11 @@ svg circle {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: clamp(14vh, 8vh, 24vh);
-    height: auto;
+    top: clamp(1svh, 8vh, 24vh);
+    height: 53vh;
     /* background-color: #0fd850; */
   }
-  
+
   .main-text {
     margin: 0;
     display: flex;
@@ -290,11 +310,7 @@ svg circle {
     align-items: center;
     width: 100%;
     z-index: 0;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-  }
-  
-  .action {
-    margin-top: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
 
   .download-cv button {
@@ -305,8 +321,8 @@ svg circle {
 
   .main-img {
     position: absolute;
-    bottom: 10rem;
-    right: 3.2rem;
+    bottom: 1rem;
+    left: 6vw;
     margin: 0;
     padding: 0;
     z-index: -1;
@@ -314,7 +330,7 @@ svg circle {
 
   .main-img img {
     border-radius: 0;
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 420px;
+    max-height: 420px;
   }
 }
