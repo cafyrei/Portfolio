@@ -16,10 +16,11 @@
   src: url("../fonts/Poppins-Regular.ttf") format("truetype");
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
 
 /* Base Style */
 body {
@@ -37,7 +38,7 @@ body {
 }
 
 .main-content {
-  width: 50%; 
+  width: 50%;
 }
 
 .main-content h1,
@@ -60,7 +61,7 @@ body {
   font-family: "NeueMachina";
   font-size: clamp(5rem, 8vw, 10.5rem);
   color: #8b61c2;
-  min-height: 1.35em; 
+  min-height: 1.35em;
 }
 
 .developer-text {
@@ -86,7 +87,6 @@ body {
   flex-direction: column;
   gap: 4rem;
   margin: 2rem 9vw 0rem;
-  gap: 4rem;
 }
 
 .download-cv {
@@ -111,7 +111,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   box-shadow: 1px 3px 8px rgba(82, 82, 82, 0.5),
-            1px -3px 8px rgba(95, 95, 95, 0.5);
+    1px -3px 8px rgba(95, 95, 95, 0.5);
 
   position: relative;
   overflow: hidden;
@@ -120,21 +120,21 @@ body {
 }
 
 .download-cv button::before {
- content: '';
- width: 0;
- height: 3em;
- border-radius: 30em;
- position: absolute;
- top: 0;
- left: 0;
- background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
- transition: .5s ease;
- display: block;
- z-index: -1;
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
 }
 
 .download-cv button:hover::before {
- width: 13em;
+  width: 13em;
 }
 
 .download-cv img {
@@ -155,11 +155,11 @@ body {
 }
 
 .socials ul {
-  list-style: none;   
-  margin: 0;          
-  padding: 0;      
-  display: flex;     
-  gap: 0.5rem;      
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
 }
 
 svg image {
@@ -186,7 +186,7 @@ svg circle {
   position: absolute;
   top: 5rem;
   left: 4.3rem;
-  width: 550px;
+  width: clamp(200px, 50vw, 550px);
   height: 550px;
   border-radius: 50%;
   background-image: radial-gradient(white 1px, transparent 2px);
@@ -197,11 +197,23 @@ svg circle {
 .main-photo {
   /* background-color: #f9f047; */
   position: relative;
-  right: 6rem;
-  bottom: 3rem;
-  width: 660px;
-  height: 660px;
+  right: 6.2rem;
+  bottom: clamp(3rem, 60vw, 3rem);
+  width: clamp(300px, 70vw, 660px);
+  height: auto;
   border-radius: 50%;
+}
+
+@media (max-width: 940px) {
+  .main-photo {
+    width: clamp(300px, 60vw, 560px);
+    right: 1rem;
+    bottom: 6rem;
+  }
+
+  #name-text {
+    font-size: clamp(4rem, 10vw, 12rem);
+  }
 }
 
 @media (max-width: 768px) {
@@ -211,12 +223,14 @@ svg circle {
     padding: 1rem 1rem;
   }
 
-  .main-content, .main-img {
+  .main-content,
+  .main-img {
     width: 100%;
     text-align: center;
   }
 
-  .circle-bg, .main-photo {
+  .circle-bg,
+  .main-photo {
     width: 80%;
     height: auto;
     position: static;
@@ -228,13 +242,13 @@ svg circle {
     align-items: center;
     justify-content: center;
   }
-  
+
   .main-text {
     margin: 0rem 9vw 1rem;
   }
 
   .main-content {
-    margin-top: 1px ;
+    margin-top: 1px;
   }
 
   .action {
@@ -250,11 +264,33 @@ svg circle {
     justify-content: center;
     align-items: center;
   }
-
 }
 
-@media (max-width: 530px) {
+@media (max-width: 576px) {
   #name-text {
     font-size: clamp(4.5rem, 8vw, 10.5rem);
+  }
+
+  .main {
+    background-color: #0fd850;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8rem;
+  }
+  .main-text {
+    margin: 0
+    ;
+    background-color: #f70000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .main-img img {
+    position: absolute;
+    z-index: -1;
   }
 }
