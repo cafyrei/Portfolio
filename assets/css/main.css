@@ -162,7 +162,6 @@ body {
   gap: 0.5rem;      
 }
 
-
 svg image {
   filter: invert(100%);
 }
@@ -178,6 +177,8 @@ svg circle {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* background-color: rgb(116, 116, 116); */
 }
 
 .circle-bg {
@@ -194,9 +195,10 @@ svg circle {
 }
 
 .main-photo {
-  position: absolute;
-  top: -10px;
-  left: 50px;
+  /* background-color: #f9f047; */
+  position: relative;
+  right: 6rem;
+  bottom: 3rem;
   width: 660px;
   height: 660px;
   border-radius: 50%;
@@ -255,5 +257,4 @@ svg circle {
   #name-text {
     font-size: clamp(4.5rem, 8vw, 10.5rem);
   }
-  
 }
