@@ -35,6 +35,7 @@ body {
   height: 80vh;
   display: flex;
   justify-content: space-evenly;
+  
 }
 
 .main-content {
@@ -112,7 +113,6 @@ body {
   color: #fff;
   box-shadow: 1px 3px 8px rgba(82, 82, 82, 0.5),
     1px -3px 8px rgba(95, 95, 95, 0.5);
-
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -272,25 +272,49 @@ svg circle {
   }
 
   .main {
-    background-color: #0fd850;
+    margin: 0;
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 8rem;
+    top: 25vh;
+    height: auto;
+    /* background-color: #0fd850; */
   }
+  
   .main-text {
-    margin: 0
-    ;
-    background-color: #f70000;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     z-index: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  }
+  
+  .action {
+    margin-top: 1.5rem;
+  }
+
+  .download-cv button {
+    width: 13em;
+    height: 3em;
+    font-size: 1.1rem;
+  }
+
+  .main-img {
+    position: absolute;
+    bottom: 10rem;
+    right: 4rem;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
   }
 
   .main-img img {
-    position: absolute;
-    z-index: -1;
+    border-radius: 0;
+    max-width: 600px;
+    max-height: 600px;
   }
 }
