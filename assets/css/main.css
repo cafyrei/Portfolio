@@ -243,11 +243,12 @@ svg circle {
   }
 
   .main-text {
+    position: relative;
+    top: 24px;
     margin: 0;
     width: 100%;
     z-index: 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    position: relative;
   }
 
   .main-content {
@@ -267,7 +268,9 @@ svg circle {
     position: absolute;
     max-width: 460px;
     max-height: 460px;
+    transform: translateX(-50%);
     right: 18vw;
+    left: 50%;
     bottom: 15vh;
   }
 
@@ -322,13 +325,15 @@ svg circle {
   .main-img {
     position: absolute;
     bottom: 1rem;
-    left: 6vw;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
     padding: 0;
     z-index: -1;
   }
 
   .main-img img {
+    position: absolute;
     border-radius: 0;
     max-width: 420px;
     max-height: 420px;
