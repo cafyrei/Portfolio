@@ -339,3 +339,10 @@ svg circle {
     max-height: 420px;
   }
 }
+
+@media (max-width: 480px) {
+  .main {
+    height: 43vh;
+  }
+  
+}
