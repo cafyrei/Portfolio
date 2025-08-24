@@ -1,4 +1,4 @@
-Status: On Going
+![Static Badge](https://img.shields.io/badge/On%20Going-%2358A616?style=for-the-badge&logo=prisma)
 
 # 🖥️ Allen's Portfolio
 
