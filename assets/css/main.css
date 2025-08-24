@@ -252,7 +252,7 @@ svg circle {
   }
 
   .main-content {
-    margin-top: 21vh;
+    margin-top: 11vh;
     display: flex;
     flex-direction: column;
     gap: 8vh;
@@ -344,5 +344,4 @@ svg circle {
   .main {
     height: 43vh;
   }
-  
 }
