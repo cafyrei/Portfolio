@@ -49,11 +49,19 @@ To view locally:
    ```bash
    git clone https://github.com/yourusername/portfolio.git
    ```
-
-
 ### 📸 Preview
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cafyrei/Portfolio/main/phone_view.png" alt="Mobile View" width="200" style="vertical-align: bottom;"/>
+  &nbsp;&nbsp;&nbsp; <!-- space between -->
+  <img src="https://raw.githubusercontent.com/cafyrei/Portfolio/main/desktop_view.png" alt="Desktop View" width="400" style="vertical-align: bottom;"/>
+</p>
 
-###📬 Contact
+<p align="center">
+  <sub>📱 Mobile View</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sub>💻 Desktop View</sub>
+</p>
+
+---
+### 📬 Contact
 - **Email:** allen2talcabaza@gmail.com  
 - **GitHub:** [cafyrei](https://github.com/cafyrei)
